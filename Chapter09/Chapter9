@@ -1,0 +1,19 @@
+Chapter 9 Notes
+
+Objects
+- An object represents a real world entity
+- An object is an instance of a class. Objects created in main method are instances of their class
+- (the word instance emphasizes the relationship between an object and its class, i.e. house blueprint and the house created from blueprint)
+- An object has a unique state(date fields) and behavior(methods)
+
+UML
+- UML = 
+
+Constructors
+- Constructors are a special method that are invoked in the main method to create an object (Circle circ = new hooplah hooplah)
+- Mainly designed to initialize data members
+
+
+
+
+
