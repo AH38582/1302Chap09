@@ -2,7 +2,8 @@
 public class CircleTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+//		main methods are where object instances are created
+		Circle circ = new Circle();
 
 	}
 
