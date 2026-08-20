@@ -5,15 +5,16 @@ public class TV {
 	private boolean on;
 
 	public TV() {
+		System.out.println("Created new TV.");
 		channel = 1;
 		volumeLevel = 100;
 		on = true;
 	}
 
 	public TV(int channel, int volumeLevel, boolean on) {
+		System.out.println("Created new TV.");
 		this.channel = (on && channel >= 1 && channel <= 100) ? channel : 1;
 		this.volumeLevel = (on && volumeLevel >= 0 && volumeLevel <= 100) ? volumeLevel : 1;
-		;
 		this.on = on;
 
 	}
@@ -35,10 +36,11 @@ public class TV {
 	public void channelDown() {
 		this.channel--;
 	}
+
 	public void volumeUp() {
 		this.volumeLevel++;
 	}
-	
+
 	public void volumeDown() {
 		this.volumeLevel--;
 	}
@@ -57,7 +59,7 @@ public class TV {
 	}
 
 	public void setVolumeLevel(int volumeLevel) {
-		this.volumeLevel = volumeLevel;
+		this.volumeLevel = (on && volumeLevel >= 0 && volumeLevel <= 100) ? volumeLevel : 1;
 	}
 
 	public boolean isOn() {
