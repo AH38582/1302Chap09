@@ -1,5 +1,8 @@
 Chapter 9 Notes
 
+OOP = Object Oriented Programming
+UML = Unified Modeling Language
+
 Objects
 - An object represents a real world entity
 - An object is an instance of a class. Objects created in main method are instances of their class
@@ -7,11 +10,35 @@ Objects
 - An object has a unique state(date fields) and behavior(methods)
 
 UML
-- UML = 
+- A UML is a class diagram
+- Class name is at the top and centered
+- Data fields are written first and then contructors and additional methods are last, these two are seperated with a line
+- Visibility modifiers are indentified with "+" "-", and i'll find the other ones later
+- A data member is denoted as dataMember: dataMemberType
+- A constructor is denoted as ClassName(parameterName: paramaterType)
+- A method is denoted as methodName(parameterName: paramaterType): returnType
+____________________________________
+|              Circle               |          
+|___________________________________|
+|-radius: double                    |
+|___________________________________|
+|+Circle()                          |
+|+Circle(newRadius: double)         |
+|+getArea(): double                 |
+|___________________________________|
+
 
 Constructors
-- Constructors are a special method that are invoked in the main method to create an object (Circle circ = new hooplah hooplah)
+- Constructors are a special method that are invoked in the main method to create an object (Circle circ = **new Circle()**)
 - Mainly designed to initialize data members
+- No-argument contructors set default values for data members
+- ^^(A class has a default constructor only if the class does not define any constructor)
+- Convenience contructors set specified values that is called from *this* keyword
+- A constructor must have the same name as the class instelf
+- Constructors do not have a return type or a void keyword(otherwise, it would be a method)
+- Constructors can be overloaded(multiple constructors with the same name, diff signature)
+- you can add print statements inside constructors and it will print when you create a new object(today years old finding this out)
+
 
 
 
