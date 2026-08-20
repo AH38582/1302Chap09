@@ -37,10 +37,16 @@ Constructors
 - A constructor must have the same name as the class instelf
 - Constructors do not have a return type or a void keyword(otherwise, it would be a method)
 - Constructors can be overloaded(multiple constructors with the same name, diff signature)
-- you can add print statements inside constructors and it will print when you create a new object(today years old finding this out)
+- you can add print statements inside constructors and it will print when you create a new object
+- you can copy an array in a constructor or use "copy constructor" to copy objects 
 
 
-
-
+Reference variables
+- Objects are accessed with reference variables (Circle **circ** = new hooplah hooplah)
+- Declaring a referance variable to Circle object:
+	Circle circ;
+- Creates Circle object and assigning a reference varible to it:
+	circ = new Circle();
+- A data field in a class can be of an object type
 
 
