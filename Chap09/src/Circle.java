@@ -36,6 +36,14 @@ public class Circle {
 		this.color = color;
 	}
 
+	public static int getNumCircles() {
+		return numCircles;
+	}
+
+	public static void setNumCircles(int numCircles) {
+		Circle.numCircles = numCircles;
+	}
+
 	public double getArea() {
 		return Math.PI * radius * radius;
 	}

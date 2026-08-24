@@ -17,14 +17,16 @@ UML
 - A data member is denoted as dataMember: dataMemberType
 - A constructor is denoted as ClassName(parameterName: paramaterType)
 - A method is denoted as methodName(parameterName: paramaterType): returnType
+- Static members are UNDERLINED*
 ____________________________________
 |              Circle               |          
 |___________________________________|
 |-radius: double                    |
-|___________________________________|
+|-numberOfCircles: int*             |
 |+Circle()                          |
 |+Circle(radius: double)         	|
 |+getArea(): double                 |
+|+getNumberOfCircles(): int         |
 |___________________________________|
 
 
@@ -43,7 +45,7 @@ Constructors
 
 
 Reference variables
-- Objects are accessed with reference variables (Circle **circ** = new hooplah hooplah)
+- Objects are accessed with reference variables (Circle **circ** = new blah blah)
 - Declaring a reference variable to Circle object:
 	Circle circ;
 - Creates Circle object and assigning a reference variable to it:
@@ -56,4 +58,5 @@ Accessing object data and methods
 
 Static variables
 - class variables; shared among all classes
+- constants(final keyword) and static members are different(?)
 
