@@ -1,0 +1,41 @@
+
+public class Rectangle {
+	double width, length;
+	
+	public Rectangle() {
+		length = 10;
+		width = 10;
+	}
+	
+	public Rectangle(double width, double length) {
+		this.length = length;
+		this.width = width;
+	}
+	
+	public double getArea() {
+		return length * width;
+	}
+	
+	public double getPerimeter() {
+		return 2 * (length + width);
+	}
+
+	public double getWidth() {
+		return width;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		this.length = length;
+	}
+	
+	
+
+}

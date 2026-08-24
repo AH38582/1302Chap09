@@ -23,7 +23,7 @@ ____________________________________
 |-radius: double                    |
 |___________________________________|
 |+Circle()                          |
-|+Circle(newRadius: double)         |
+|+Circle(radius: double)         	|
 |+getArea(): double                 |
 |___________________________________|
 
@@ -36,7 +36,7 @@ Constructors
 - Convenience constructors set specified values that is called from *this* keyword
 - A constructor must have the same name as the class itself
 - Constructors do not have a return type or a void keyword(otherwise, it would be a method)
-- Constructors can be overloaded(multiple constructors with the same name, diff signature)
+- Convenience constructors can be overloaded(multiple constructors with the same name, diff signature)
 - you can add print statements inside constructors and it will print when you create a new object
 - you can copy an array in a constructor or use "copy constructor" to copy objects 
 
@@ -53,4 +53,6 @@ Accessing object data and methods
 - Is accessed using the dot operator
 - 
 
+Static variables
+- class variables; shared among all classes
 
