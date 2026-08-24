@@ -12,8 +12,8 @@ Objects
 UML
 - A UML is a class diagram
 - Class name is at the top and centered
-- Data fields are written first and then contructors and additional methods are last, these two are seperated with a line
-- Visibility modifiers are indentified with "+" "-", and i'll find the other ones later
+- Data fields are written first and then constructors and additional methods are last, these two are separated with a line
+- Visibility modifiers are identified with "+" "-", and i'll find the other ones later
 - A data member is denoted as dataMember: dataMemberType
 - A constructor is denoted as ClassName(parameterName: paramaterType)
 - A method is denoted as methodName(parameterName: paramaterType): returnType
@@ -31,10 +31,10 @@ ____________________________________
 Constructors
 - Constructors are a special method that are invoked in the main method to create an object (Circle circ = **new Circle()**)
 - Mainly designed to initialize data members
-- No-argument contructors set default values for data members
+- No-argument constructors set default values for data members
 - ^^(A class has a default constructor only if the class does not define any constructor)
-- Convenience contructors set specified values that is called from *this* keyword
-- A constructor must have the same name as the class instelf
+- Convenience constructors set specified values that is called from *this* keyword
+- A constructor must have the same name as the class itself
 - Constructors do not have a return type or a void keyword(otherwise, it would be a method)
 - Constructors can be overloaded(multiple constructors with the same name, diff signature)
 - you can add print statements inside constructors and it will print when you create a new object
@@ -43,10 +43,14 @@ Constructors
 
 Reference variables
 - Objects are accessed with reference variables (Circle **circ** = new hooplah hooplah)
-- Declaring a referance variable to Circle object:
+- Declaring a reference variable to Circle object:
 	Circle circ;
-- Creates Circle object and assigning a reference varible to it:
+- Creates Circle object and assigning a reference variable to it:
 	circ = new Circle();
 - A data field in a class can be of an object type
+
+Accessing object data and methods
+- Is accessed using the dot operator
+- 
 
 
