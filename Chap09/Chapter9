@@ -39,6 +39,7 @@ Constructors
 - Convenience constructors can be overloaded(multiple constructors with the same name, diff signature)
 - you can add print statements inside constructors and it will print when you create a new object
 - you can copy an array in a constructor or use "copy constructor" to copy objects 
+- String object types and static member initialization recommended not in constructor
 
 
 Reference variables
