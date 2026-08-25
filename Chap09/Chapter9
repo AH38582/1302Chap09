@@ -23,10 +23,13 @@ ____________________________________
 |___________________________________|
 |-radius: double                    |
 |-numberOfCircles: int*             |
+|___________________________________|
 |+Circle()                          |
-|+Circle(radius: double)         	|
-|+getArea(): double                 |
+|+Circle(radius: double)            |
+|+getRadius(): double               | 
+|+setRadius(radius: double): void   |
 |+getNumberOfCircles(): int         |
+|+getArea(): double                 |
 |___________________________________|
 
 
@@ -59,4 +62,46 @@ Accessing object data and methods
 Static variables
 - class variables; shared among all classes
 - constants(final keyword) and static members are different(?)
+- any changes made in value is updated across all instances automatically
+
+Variables of primitive types vs reference types
+- A variable of a primitive type holds a value of the primitive type
+- A variable of a reference type holds a reference to where an object is stored in memory
+
+int i = 1; // Primitive type
+Circle c; //Reference type
+
+- When an object is no longer referenced, it is considered "garbage collection", which removes objects in memory that are no longer able to be accessed
+
+Classes from Java library examples
+- java.util.Date
+- java.util.Random
+- javafx.geometry.Point2D
+
+***Visibility modifiers***
+- Public: classes methods and data fields are denoted to be accessed by any class
+- Private: opposite of public; only keeps to its class
+- Default: same as public but package secure 
+-
+
+Data field encapsulation(getters and setters)
+- Modifying data fields directly is not good practice for two reasons:
+	1. Data could be tampered
+	2. Class becomes difficult to maintain and vulnerable to bugs
+	
+- To fix those reasons, data fields can be declared private(data field encapsulation)
+- now that data fields are private, they cannot be accessed outside the class and must be invoked some other way hmm i wonder
+- getter method(accessor): returns a value
+- setter method(mutator): sets a new value
+
+Signature cheat sheet(or use the source button wisely)
+	1. Getter:
+		public returnType gePropertyName() { // boolean uses isPropertyName
+		
+		}
+		
+	2. Setter:
+		public void setPropertyName(dataType propertValue) {
+		
+		}
 
