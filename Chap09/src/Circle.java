@@ -19,6 +19,8 @@ public class Circle {
 		this.color = color;
 		Circle.numCircles++;
 	}
+	
+//	Getters and setters
 
 	public double getRadius() {
 		return radius;
@@ -35,6 +37,8 @@ public class Circle {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
+//	static method
 
 	public static int getNumCircles() {
 		return numCircles;
@@ -43,6 +47,8 @@ public class Circle {
 	public static void setNumCircles(int numCircles) {
 		Circle.numCircles = numCircles;
 	}
+	
+//	regular methods
 
 	public double getArea() {
 		return Math.PI * radius * radius;

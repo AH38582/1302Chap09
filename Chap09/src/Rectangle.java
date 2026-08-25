@@ -3,8 +3,8 @@ public class Rectangle {
 	double width, length;
 	
 	public Rectangle() {
-		length = 10;
-		width = 10;
+		length = 1;
+		width = 1;
 	}
 	
 	public Rectangle(double width, double length) {
