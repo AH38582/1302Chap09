@@ -1,3 +1,4 @@
+package chap09;
 public class Tool {
 	private String name;
 	private boolean active;

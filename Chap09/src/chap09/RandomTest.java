@@ -1,3 +1,4 @@
+package chap09;
 
 public class RandomTest {
 
@@ -25,7 +26,7 @@ public class RandomTest {
 
 		java.util.Random generate4 = new java.util.Random(1000);
 		for (int i = 0; i < 10; i++) {
-			System.out.print(generate3.nextInt(100) + " ");
+			System.out.print(generate4.nextInt(100) + " ");
 		}
 	}
 

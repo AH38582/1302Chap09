@@ -1,3 +1,4 @@
+package chap09;
 
 public class Rectangle {
 	double width, length;
