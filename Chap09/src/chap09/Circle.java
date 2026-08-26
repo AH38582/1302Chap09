@@ -59,12 +59,26 @@ public class Circle {
 		return 2.0 * Math.PI * radius;
 	}
 
-	public static void printCircle(Circle[] c) {
+	public static void printCircleArray(Circle[] c) {
 		System.out.printf("Total number of circles: %d%n%n", Circle.getNumCircles());
 		for (int i = 0; i < c.length; i++) {
 			System.out.printf("New circle created!%n%nCircle %d:%ncolor: %s%nRadius: %f%nArea: %f%nDiameter: %f%nPerimeter: %f%n%n", i + 1, c[i].getColor(), c[i].getRadius(), c[i].getArea(), c[i].getDiameter(), c[i].getPerimeter());
 		}
 		
+	}
+	
+	public void printCircle(Circle c) {
+		System.out.printf("New circle created!%n%nColor: %s%nRadius: %f%nArea: %f%nDiameter: %f%nPerimeter: %f%n%n", c.getColor(), c.getRadius(), c.getArea(), c.getDiameter(), c.getPerimeter());
+
+	}
+	
+	public static void printAreas(Circle c, int times) {
+		System.out.println("Radius\t\tArea");
+		while (times >= 1) {
+			System.out.println(c.getRadius() + "\t\t" + c.getArea());
+			c.setRadius(c.getRadius() + 1);
+			times--;
+		}
 	}
 
 }

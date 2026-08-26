@@ -3,14 +3,22 @@ package chap09;
 public class CircleTest {
 
 	public static void main(String[] args) {
-		Circle c1 = new Circle(30, "Blue");
+		Circle c1 = new Circle();
+		Circle c2 = new Circle(-27.0, null);
+		Circle c3 = new Circle(27.0, "Pink");
 		
-		c1.setRadius(2.0);
+		Circle[] circles = { c1, c2, c3 };
 		
-		System.out.println(c1.getArea());
-		System.out.println(c1.getColor());
-		System.out.println("Number of circles: " + Circle.getNumCircles());
-		
+		Circle.printCircleArray(circles);
+		c1.printCircle(c1);
+		c1.printAreas(c3, 7);
+
 	}
+
+	
+
+	
+	
+	
 
 }

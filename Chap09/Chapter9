@@ -82,7 +82,7 @@ Classes from Java library examples
 - Public: classes methods and data fields are denoted to be accessed by any class
 - Private: opposite of public; only keeps to its class
 - Default: same as public but package secure 
--
+- Protected
 
 Data field encapsulation(getters and setters)
 - Modifying data fields directly is not good practice for two reasons:
@@ -104,4 +104,7 @@ Signature cheat sheet(or use the source button wisely)
 		public void setPropertyName(dataType propertValue) {
 		
 		}
+
+Passing objects to methods
+- passing an object is passing the reference of the object
 
