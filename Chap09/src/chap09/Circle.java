@@ -8,16 +8,15 @@ public class Circle {
 
 //	Default constructor
 	public Circle() {
-		System.out.println("New circle created");
-		radius = 1.0;
+		setRadius(radius);
+		setColor(color);
 		Circle.numCircles++;
 	}
 
 //	Convenience constructor
-	public Circle(int radius, String color) {
-		System.out.println("New circle created");
-		this.radius = radius;
-		this.color = color;
+	public Circle(double radius, String color) {
+		setRadius(radius);
+		setColor(color);
 		Circle.numCircles++;
 	}
 	
@@ -28,7 +27,7 @@ public class Circle {
 	}
 	
 	public void setRadius(double radius) {
-		this.radius = radius;
+		this.radius = (radius < 0) ? 1.0 : radius;
 	}
 	
 	public String getColor() {
@@ -36,19 +35,16 @@ public class Circle {
 	}
 	
 	public void setColor(String color) {
-		this.color = color;
+		this.color = (color == null || color.isEmpty()) ? "blue" : color;
 	}
 	
 //	static method
 
 	public static int getNumCircles() {
-		return numCircles;
+		return Circle.numCircles;
 	}
 
-	public static void setNumCircles(int numCircles) {
-		Circle.numCircles = numCircles;
-	}
-	
+
 //	regular methods
 
 	public double getArea() {
@@ -61,6 +57,14 @@ public class Circle {
 
 	public double getPerimeter() {
 		return 2.0 * Math.PI * radius;
+	}
+
+	public static void printCircle(Circle[] c) {
+		System.out.printf("Total number of circles: %d%n%n", Circle.getNumCircles());
+		for (int i = 0; i < c.length; i++) {
+			System.out.printf("New circle created!%n%nCircle %d:%ncolor: %s%nRadius: %f%nArea: %f%nDiameter: %f%nPerimeter: %f%n%n", i + 1, c[i].getColor(), c[i].getRadius(), c[i].getArea(), c[i].getDiameter(), c[i].getPerimeter());
+		}
+		
 	}
 
 }
