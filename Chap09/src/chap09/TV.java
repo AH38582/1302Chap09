@@ -5,18 +5,15 @@ public class TV {
 	private int channel, volumeLvl;
 
 	public TV() {
+		this(1, 100, true);
 		System.out.println("Created new TV.");
-		channel = 1;
-		volumeLvl = 100;
-		on = true;
 	}
 
-	public TV(int channel, int volumeLevel, boolean on) {
+	public TV(int channel, int volumeLvl, boolean on) {
 		System.out.println("Created new TV.");
-		this.channel = (on && channel >= 1 && channel <= 100) ? channel : 1;
-		this.volumeLvl = (on && volumeLevel >= 0 && volumeLevel <= 100) ? volumeLevel : 1;
-		this.on = on;
-
+		setChannel(channel);
+		setVolumeLvl(volumeLvl);
+		setIsOn(on);
 	}
 
 	public int getChannel() {
@@ -24,7 +21,7 @@ public class TV {
 	}
 
 	public void setChannel(int channel) {
-		this.channel = channel;
+		this.channel = (on && channel >= 1 && channel <= 100) ? channel : 1;
 	}
 
 	public int getVolumeLvl() {
@@ -32,9 +29,17 @@ public class TV {
 	}
 
 	public void setVolumeLvl(int volumeLvl) {
-		this.volumeLvl = volumeLvl;
+		this.volumeLvl = (on && volumeLvl >= 0 && volumeLvl <= 100) ? volumeLvl : 1;
 	}
 
+	public boolean getIsOn() {
+		return on;
+	}
+	
+	public void setIsOn(boolean on) {
+		this.on = on;
+	}
+	
 	public void channelUp() {
 		this.channel++;
 	}
@@ -51,18 +56,6 @@ public class TV {
 		this.volumeLvl--;
 	}
 
-	public void setVolumeLevel(int volumeLevel) {
-		this.volumeLvl = volumeLevel;
-		this.volumeLvl = (on && volumeLevel >= 0 && volumeLevel <= 100) ? volumeLevel : 1;
-	}
-
-	public boolean isOn() {
-		return on;
-	}
-
-	public void setOn(boolean on) {
-		this.on = on;
-	}
 	
 	public boolean turnOn() {
 		return on = true;

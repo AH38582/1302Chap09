@@ -1,16 +1,18 @@
 package chap09;
 
 public class Rectangle {
-	double width, length;
+	private double width, length;
+	private static int numOfRectangles;
+	
 	
 	public Rectangle() {
-		length = 1;
-		width = 1;
+		this(1.0, 1.0);
 	}
 	
 	public Rectangle(double width, double length) {
-		this.length = length;
-		this.width = width;
+		setWidth(width);
+		setLength(length);
+		Rectangle.numOfRectangles++;
 	}
 	
 	public double getArea() {
@@ -35,6 +37,10 @@ public class Rectangle {
 
 	public void setLength(double length) {
 		this.length = length;
+	}
+	
+	public static int getNumOfRectangles() {
+		return Rectangle.numOfRectangles;
 	}
 	
 	
