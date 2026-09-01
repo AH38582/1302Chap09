@@ -4,7 +4,7 @@ public class Circle {
 //	Data members
 	private double radius;
 	private String color = "";
-	private static int numCircles = 0; // String and static initialization recommended not in constructor
+	private static int numCircles = 0;
 
 //	Default constructor
 	public Circle() {
