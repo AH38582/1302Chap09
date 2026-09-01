@@ -3,14 +3,12 @@ package chap09;
 public class Circle {
 //	Data members
 	private double radius;
-	private String color = "";
-	private static int numCircles = 0;
+	private String color;
+	private static int numCircles;
 
 //	Default constructor
 	public Circle() {
-		setRadius(radius);
-		setColor(color);
-		Circle.numCircles++;
+		this(1.0, "");
 	}
 
 //	Convenience constructor

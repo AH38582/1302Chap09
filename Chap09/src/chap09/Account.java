@@ -8,17 +8,15 @@ public class Account {
 //	default constructor that creates default account
 	
 	public Account() {
-		setId(0);
+		this(0, 0);
 		setAnnualInterestRate(0);
-		balance = 0;
-		
 	}
 	
 //	convenience constructor that creates account with specified id and initial balance
 	
 	public Account(int id, double balance) {
 		setId(id);
-		this.balance = balance;
+		balance = balance;
 	}
 	
 //	accessor methods for id, balance and annualInterestRate
